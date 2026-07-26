@@ -155,8 +155,7 @@ class RICSStore {
                 isWearable: itemData.IsWearable || false,
                 enabled: itemData.Enabled !== false,
                 modactive: itemData.modactive === true   // NEW
-            }))
-            // .filter(item => item.modactive)               // ← Only show active mods
+            }))            // ← Only show active mods
             .filter(item => (item.enabled || item.isUsable || item.isEquippable || item.isWearable))
             .filter(item => item.price > 0);
     }
@@ -171,8 +170,7 @@ class RICSStore {
                 modSource: eventData.ModSource || 'Unknown',
                 enabled: eventData.Enabled !== false,
                 modactive: eventData.modactive === true   // NEW
-            }))
-            .filter(event => event.modactive)             // ← Only show active mods
+            }))          // ← Only show active mods
             .filter(event => event.enabled && event.baseCost > 0);
     }
 
@@ -207,8 +205,7 @@ class RICSStore {
                 modSource: weatherData.ModSource || 'Unknown',
                 enabled: weatherData.Enabled !== false,
                 modactive: weatherData.modactive === true   // NEW
-            }))
-            .filter(weather => weather.modactive)         // ← Only show active mods
+            }))       // ← Only show active mods
             .filter(weather => weather.enabled && weather.baseCost > 0);
     }
 
@@ -231,7 +228,7 @@ processRacesData(racesObject) {
             enabledXenotypes: raceData.EnabledXenotypes || {}
         };
 
-        if (!baseRace.enabled || baseRace.modActive === false) return;
+        if (!baseRace.enabled) return;
 
         if (!grouped[raceKey]) {
             grouped[raceKey] = {
