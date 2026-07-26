@@ -1,6 +1,6 @@
 {
   "givecoins": {
-    "Enabled": true,
+    "Enabled": false,
     "CooldownSeconds": 0,
     "Cost": 0,
     "SupportsCost": false,
@@ -19,7 +19,7 @@
     "CustomData": ""
   },
   "givekarma": {
-    "Enabled": true,
+    "Enabled": false,
     "CooldownSeconds": 0,
     "Cost": 0,
     "SupportsCost": false,
@@ -38,7 +38,7 @@
     "CustomData": ""
   },
   "setkarma": {
-    "Enabled": true,
+    "Enabled": false,
     "CooldownSeconds": 0,
     "Cost": 0,
     "SupportsCost": false,
@@ -57,7 +57,7 @@
     "CustomData": ""
   },
   "togglestore": {
-    "Enabled": true,
+    "Enabled": false,
     "CooldownSeconds": 0,
     "Cost": 0,
     "SupportsCost": false,
@@ -95,7 +95,7 @@
     "CustomData": ""
   },
   "cleanlootboxes": {
-    "Enabled": true,
+    "Enabled": false,
     "CooldownSeconds": 0,
     "Cost": 0,
     "SupportsCost": false,
@@ -114,7 +114,7 @@
     "CustomData": ""
   },
   "cleanviewers": {
-    "Enabled": true,
+    "Enabled": false,
     "CooldownSeconds": 0,
     "Cost": 0,
     "SupportsCost": false,
@@ -437,7 +437,7 @@
     "CustomData": "{\"showDebugInfo\":\"false\"}"
   },
   "giftcoins": {
-    "Enabled": false,
+    "Enabled": true,
     "CooldownSeconds": 0,
     "Cost": 0,
     "SupportsCost": false,
@@ -495,7 +495,7 @@
   },
   "use": {
     "Enabled": true,
-    "CooldownSeconds": 0,
+    "CooldownSeconds": 300,
     "Cost": 0,
     "SupportsCost": false,
     "PermissionLevel": "everyone",
@@ -916,7 +916,7 @@
     "CooldownSeconds": 0,
     "Cost": 0,
     "SupportsCost": false,
-    "PermissionLevel": "subscriber",
+    "PermissionLevel": "everyone",
     "RequiresConfirmation": false,
     "CommandAlias": "",
     "useCommandCooldown": true,
