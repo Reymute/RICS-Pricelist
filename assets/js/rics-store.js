@@ -191,8 +191,7 @@ class RICSStore {
                 bypassLimit: traitData.BypassLimit || false,
                 modSource: traitData.ModSource || 'Unknown',
                 modactive: traitData.modactive === true   // NEW
-            }))
-            .filter(trait => trait.modactive)               // ← Only show active mods
+            }))            // ← Only show active mods
             .filter(trait => trait.canAdd || trait.canRemove)
             .filter(trait => trait.addPrice > 0 || trait.removePrice > 0);
     }
