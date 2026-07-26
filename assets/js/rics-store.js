@@ -156,7 +156,7 @@ class RICSStore {
                 enabled: itemData.Enabled !== false,
                 modactive: itemData.modactive === true   // NEW
             }))
-            .filter(item => item.modactive)               // ← Only show active mods
+            // .filter(item => item.modactive)               // ← Only show active mods
             .filter(item => (item.enabled || item.isUsable || item.isEquippable || item.isWearable))
             .filter(item => item.price > 0);
     }
