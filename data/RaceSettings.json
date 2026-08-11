@@ -3,9 +3,9 @@
     "DisplayName": "людина",
     "Enabled": true,
     "ModActive": true,
-    "BasePrice": 1750,
+    "BasePrice": 2200,
     "MinAge": 16,
-    "MaxAge": 65,
+    "MaxAge": 56,
     "AllowCustomXenotypes": true,
     "DefaultXenotype": "Baseliner",
     "PreferredPawnKindDefName": null,
@@ -14,7 +14,33 @@
       "AllowFemale": true,
       "AllowOther": true
     },
-    "XenotypePrices": {},
-    "EnabledXenotypes": {}
+    "XenotypePrices": {
+      "Baseliner": 2200.0,
+      "Dirtmole": 2700.0,
+      "Genie": 2700.0,
+      "Highmate": 3300.0,
+      "Hussar": 3400.0,
+      "Impid": 3500.0,
+      "Neanderthal": 3200.0,
+      "Pigskin": 3300.0,
+      "Sanguophage": 3000.0,
+      "Starjack": 3000.0,
+      "Waster": 3000.0,
+      "Yttakin": 3000.0
+    },
+    "EnabledXenotypes": {
+      "Baseliner": true,
+      "Dirtmole": true,
+      "Genie": true,
+      "Highmate": true,
+      "Hussar": true,
+      "Impid": true,
+      "Neanderthal": true,
+      "Pigskin": true,
+      "Sanguophage": true,
+      "Starjack": true,
+      "Waster": true,
+      "Yttakin": true
+    }
   }
 }
